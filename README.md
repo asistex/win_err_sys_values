@@ -8,4 +8,4 @@ HB - Harbour file .hb to create the database
 
 TXT - text file with source from msdn. copyright microsoft
 
-Use in your harbour code with the return value of GetLastError()
+Uses the return value of GetLastError() to search in the database
