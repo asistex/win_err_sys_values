@@ -1,6 +1,7 @@
 
-/*-----------------------------------------------------------------*/
-
+/*-----------------------------------*/
+// https://github.com/asistex/win_err_sys_values.git
+/*-----------------------------------*/
 
 #pragma warninglevel=3
 #pragma -km+
@@ -48,7 +49,7 @@ PROCEDURE Main()
          ENDIF
 
       ENDDO
-      Qout( "items cargados en la base: ", i )
+      Qout( "items loaded to database: ", i )
       oFile:close()
    ENDIF
 
@@ -56,7 +57,7 @@ PROCEDURE Main()
 
    RETURN
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 /* Harbour Project source code
    A class that reads a file one line at a time
@@ -103,7 +104,7 @@ CREATE CLASS TFileRead
 
 END CLASS
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD New( cFile, nSize ) CLASS TFileRead
 
@@ -123,7 +124,7 @@ METHOD New( cFile, nSize ) CLASS TFileRead
 
    RETURN Self
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD Open( nMode ) CLASS TFileRead
 
@@ -153,7 +154,7 @@ METHOD Open( nMode ) CLASS TFileRead
 
    RETURN Self
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD ReadLine() CLASS TFileRead
 
@@ -222,7 +223,7 @@ METHOD ReadLine() CLASS TFileRead
 
    RETURN cLine
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD EOL_pos() CLASS TFileRead
 
@@ -245,7 +246,7 @@ METHOD EOL_pos() CLASS TFileRead
 
    RETURN nPos
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD Close() CLASS TFileRead
 
@@ -265,7 +266,7 @@ METHOD Close() CLASS TFileRead
 
    RETURN Self
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD Name() CLASS TFileRead
 
@@ -273,7 +274,7 @@ METHOD Name() CLASS TFileRead
 
    RETURN ::cFile
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD IsOpen() CLASS TFileRead
 
@@ -281,7 +282,7 @@ METHOD IsOpen() CLASS TFileRead
 
    RETURN ::nHan != F_ERROR
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD MoreToRead() CLASS TFileRead
 
@@ -290,7 +291,7 @@ METHOD MoreToRead() CLASS TFileRead
 
    RETURN ! ::lEOF .OR. ! Empty( ::cBuffer )
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD Error() CLASS TFileRead
 
@@ -298,7 +299,7 @@ METHOD Error() CLASS TFileRead
 
    RETURN ::nError != 0
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD ErrorNo() CLASS TFileRead
 
@@ -306,7 +307,7 @@ METHOD ErrorNo() CLASS TFileRead
 
    RETURN ::nError
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
 
 METHOD ErrorMsg( cText ) CLASS TFileRead
 
@@ -330,4 +331,4 @@ METHOD ErrorMsg( cText ) CLASS TFileRead
 
    RETURN cMessage
 
-/*-----------------------------------------------------------------*/
+/*-----------------------------------*/
