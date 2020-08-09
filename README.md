@@ -1,6 +1,6 @@
 # win_err_sys_values
 
-## windows error system from 0 to 15841. 
+## windows error system messages from 0 to 15841. 
 
 #### win_sys_err.dbf 
    - file with numeric value, hex value, define Constant, and text Description
