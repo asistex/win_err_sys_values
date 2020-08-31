@@ -1,18 +1,10 @@
-# win sys messages values
+win_err_sys_values
+windows error system from 0 to 15841.
 
-## windows system messages WM_xxx
-   most part of the mith comments
+DBF - file with numeric value, hex value, define, and text message
 
-## other windows system messages
- * BM_ CBEM_ CDM_ EM_ IE_ LVM_ RB_ SB_ TB_ UDM_ TTM_
-   missing comments
+HB - Harbour file .hb to create the database
 
-#### win_sys_msg.dbf
-   - file with numeric value, hex value, define Constant, and text Description
+TXT - text file with source from msdn. copyright microsoft
 
-#### winmsg2dbf.hb
-   - Harbour file .hb to create the database
-
-#### win_msg_codes.txt
-   - text file with source to create dbf.
-
+Uses the return value of GetLastError() to search in the database
